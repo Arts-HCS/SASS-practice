@@ -1,3 +1,16 @@
 $principal-font: 'Poppins', sans-serif;
-$principal-color: #121212;
 $botton-color: #4488ee;
+$tema: claro;
+
+body{
+    @if $tema == oscuro{
+        background-color: #343434;
+        color: #dedede;
+    } @else if $tema == gris{
+        background-color: #cdcdcd;
+        color: #121212;
+    } @else{
+        background-color: #fff;
+        color: #121212;
+    }
+}
